@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>vitamin campany</title>
+
+    <style>
+        div.base {
+            width: 1800px;
+            height: 1000px;
+            
+            margin: 0 auto;
+        }
+        header {
+            
+            height: 150px;
+            background-image: url(imgfile/huc.jpg);
+            background-size: 800px
+        }
+        .log {
+            text-align: right;
+            font: bold;
+            display: inline-block;
+            position: relative;
+            bottom: 120px;
+            left: 1600px;
+            
+        }
+        .log1 {
+            text-align: right;
+            font: bold;
+            display: inline-block;
+            position: relative;
+            bottom: 120px;
+            left: 1610px;
+        }
+        div.he1 {
+            position: relative;
+            left: 800px;
+            top: 20px;
+            font-size: x-large;
+        }
+        .sc {
+            
+            height: 100px;
+        }
+        .sc1 {
+            border-bottom: 5px solid yellow;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            display: inline-block;
+            position: relative;
+            top: 30%;
+            left: 23%;
+            margin-right: 130px;
+        }
+        .sc2 {
+            border-bottom: 5px solid red;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            display: inline-block;
+            position: relative;
+            top: 30%;
+            left: 23%;
+            margin-right: 130px;
+        }
+        a:link{
+            color: black;
+            text-decoration-line: none;
+            }
+        a:visited{
+            color: black;
+        }
+        
+        .contents {
+            
+            height: 630px;
+        }
+        nav {
+            
+            height: 630px;
+            width: 200px;
+            float: left;
+            background-image: url(imgfile/images.jpg);
+            background-size: cover;
+        }
+        section {
+            
+            height: 630px;
+            width: 1400px;
+            float: left;
+            
+        }
+       
+            
+        /* .company{
+            
+            width: 600px;
+            height: 500px;
+            background-image: url(imgfile/va.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 350px;
+        }
+        .intro{
+            width: 700px;
+            height: 500px;
+            flex-direction: row;
+            position: absolute;
+            top: 350px;
+            right: 250px;
+           
+        } */
+        aside {
+            
+            height: 630px;
+            width: 160px;
+            float: right;
+            background-image: url(imgfile/lol.jpg);
+            background-size: cover;
+        }
+        footer {
+            background-color: gold;
+            height: 100px;
+        }
+        .footname {
+            color: red;
+            font-size: large;
+            text-align: center;
+            font-weight: bold;
+            float: left;
+        }
+        .footname1 {
+            font-style: italic;
+            text-align: left;
+            position: relative;
+            left: 700px;
+            top: 30px;
+        }
+
+        ul, li{
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        #mainWrapper{
+            width: 1200px;
+            
+            margin: 0 auto;
+            
+        }
+
+        #mainWrapper > ul >li:first-chlid{
+            text-align: center;
+            font-size: 14pt;
+            
+            vertical-align: middle;
+            line-height: 30px;
+            
+        }
+        #ultable {
+            margin-top: 10px;
+            
+        }
+        ul,li{
+            
+            margin: 20px auto;
+           
+        }
+        #ultable > li:first-child > ul > li{
+            background-color: #c9c9c9;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #ultable > li > ul {
+            clear:both;
+            padding: 0px auto;
+            position: relative;
+            min-width: 40px;
+        }
+        #ultable > li > ul > li{
+            float: left;
+            font-size: 13pt;
+            border-bottom: 1px solid silver;
+            vertical-align: baseline;
+            
+        }
+
+            #ultable > li > ul > li:first-child {width: 10%; height: 30px;}
+            #ultable > li > ul > li:first-child +li {width: 40%;height: 30px;}
+            #ultable > li > ul > li:first-child +li+li{width: 20%;height: 30px;}
+            #ultable > li > ul > li:first-child +li+li+li{width: 15%;height: 30px;}
+            #ultable > li > ul > li:first-child +li+li+li+li{width: 10%; height: 30px;}
+
+        #divpaging{
+            clear: both;
+            margin: 0 auto;
+            width: 220px;
+            height: 50px;
+        }
+        #divpaging > div {
+            float: left;
+            width: 30px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #liSearchOption {clear: both;}
+        #liSearchOption > div {
+            margin: 0 auto;
+            margin-top: 30px;
+            width: auto;
+            height: 100px;
+        }
+        .left{
+            text-align: left;
+            
+        }
+        .astyle > a:hover{
+        text-decoration: underline green solid 7px;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="base">
+
+        <header>
+            <div class="he1">
+                <h1> <a href="main.html">SH Vitamin</a></h1>
+            </div>
+            <!-- <div class="log astyle"> -->
+            <div class="log" >  <a href="login.html" >로그인</a></div>
+            <div class="log1"> <a href="member.html">회원가입</a> </div>
+            <!-- </div> -->
+
+        </header>
+        <div class="sc">
+            <div class="sc1 astyle" ><a href= myself.html >회사 소개</a></div>
+            <div class="sc1 astyle"><a href= vitamin.html>비타민이란?</a></div>
+            <div class="sc1 astyle"><a href= selfmap.html>회사 위치</a></div>
+            <div class="sc1 astyle"><a href= datazip.html>자료실</a></div>
+            <div class="sc2 astyle"><a href = cscenter.html>고객 센터</a></div>
+        </div>
+        <div class="contents">
+            <nav>
+                <ul>
+                    <h1>Vitamin list</h1>
+                    <ul>
+                        <h3>Vitamin A</h3>
+                    </ul>
+                    <ul>
+                        <h3>Vitamin B</h3>
+                    </ul>
+                    <ul>
+                        <h3>Vitamin C</h3>
+                    </ul>
+                    <ul>
+                        <h3>Vitamin D</h3>
+                    </ul>
+                </ul>
+            </nav>
+            <section>
+                    <div id="mainWrapper">
+                        <ul>
+                            <li>  </li>
+                                <li>
+                                    <h1>자주 묻는 질문</h1>
+                                    <ul id="ultable">
+                                    <li> 
+                                    <ul>
+                                        <li>No</li>
+                                        <li>제목</li>
+                                        <li>작성일</li>
+                                        <li>작성자</li>
+                                        <li>조회수</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>1</li>
+                                        <li class="left">비타민 A</li>
+                                        <li>2022.01.09</li>
+                                        <li>비타민</li>
+                                        <li>0</li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li>2</li>
+                                        <li class="left">비타민 B</li>
+                                        <li>2022.01.09</li>
+                                        <li>비타민</li>
+                                        <li>3</li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li>3</li>
+                                        <li class="left">비타민 C</li>
+                                        <li>2022.01.09</li>
+                                        <li>비타민</li>
+                                        <li>3</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>4</li>
+                                        <li class="left">비타민 D</li>
+                                        <li>2022.01.09</li>
+                                        <li>비타민</li>
+                                        <li>2</li>
+                                    </ul>
+                                </li>
+                             </ul>
+                        </li>
+                        <li>
+                            <div id="divpaging">
+                                <div>◀</div>
+                                <div><b>1</b></div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                                <div>▶</div>
+                            </div>
+                        </li>
+                        <li id="liSearchOption">
+                                <div>
+                                        <select id="selSearchOption">
+                                            <option value="A">제목+내용</option>
+                                            <option value="B">제목</option>
+                                            <option value="C">내용</option>
+                                        </select>
+                                        <input id="txtkeyword"/>
+                                        <input type="button" value="검색">
+                                </div>
+                        </li>
+                        </ul>
+                    </div>
+            </section>
+            <aside>
+            </aside>
+        </div>
+
+        <footer>
+            <div class="footname">
+                <h1>Vitamin campay</h1>
+            </div>
+            <div class="footname1">
+                <h4>법인명 : SH Vitamin | 사업자등록 번호 : XXX-XX-XXX | 주소 : 부산시 사하구
+                    <br> 이메일 : worudkin@naver.com | 대표이사 : 신재경
+                    <br> 전화번호 : 010-xxxx-xxxx | 팩스번호 : 070-xxxx-xxxx
+                </h4>
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
